@@ -13,12 +13,13 @@
 <body>
     <h1 style="color:rgb(0, 94, 255)"><strong>No Homework petition</strong></h1>
     <h4>Most students currently enrolled do not want homework!</h4>
-    <!-- This image shows students that do not want homework-->
-     <img src="imagesfolder/Brainerd-1-Issue-3B-UNEDITED-475x291.png" width="400" height=200">
+    <!-- This image shows students that do not want homework. Path is relative to this file, which is in hmltproject/ -->
+    <img src="imagesfolder/Brainerd-1-Issue-3B-UNEDITED-475x291.png" alt="Students protesting homework" width="400" height="200">
 
 
     <p><strong>In order to eliminate homework, we need your support!</strong></p>
-    <form action="petitionresult.html" method="get">
+    <!-- Submit to petitionresult.html which is in the repo root; use absolute (from site root) path to be safe when published -->
+    <form action="/P4-2025/petitionresult.html" method="get">
         <input type="radio" name="support" id="yes1" value="yes">
         <label for="yes1">I understand and willing to support!</label>
         <br>
@@ -49,7 +50,7 @@
         <input type="submit" value="Submit">
 
         <h1>Thanks!</h1>
-        <img src="imagesfolder/istockphoto-868643608-612x612.jpg" alt="" width="150" height="150">
+    <img src="imagesfolder/istockphoto-868643608-612x612.jpg" alt="" width="150" height="150">
     </form>
 </body>
 </html>
